@@ -2,39 +2,48 @@
 
 ## 1a. OSI Model
 
-Open Systems Interconnection Model is a 7-layer model which is a set of rules that explains how different computer systems communicate over a network.
-OSI Model provides a clean structure for data transmission and managing network issues. OSI Model has 7 layers as follows:
+Open Systems Interconnection Model is a 7 layer collection of guidelines that describes how various computer systems interact with one another via a network.
+The OSI Model offers a clear framework for handling network problems and data transfer. The seven layers of the OSI Model are as follows:
 
-1. **Physical Layer**: Transmission of raw data (bits) through cables, hardware, or wireless media. `Example: Ethernet cables, WiFi signals`
-2. **Data Link Layer**: Transfers frames between internet, Framing, MAC addressing, error detection. `Example: Switches, VLAN, ARP`
-3. **Network Layer**: Packet forwarding, IP addressing, and routing. `Example: Routers, Firewalls, ICMP`
-4. **Transport Layer**: Reliable data transfer (TCP) or faster transfer (UDP). `Example: TCP, UDP, Ports, netstat-tupln, telnet <ip> <port>`
-5. **Session Layer**: Manages sessions between apps (APIs). Session of communicating.
-6. **Presentation Layer**: Data formatting, Encryption, Compression. `Example: SSL/TLS, Data Serialization (JSON, XML)`
-7. **Application Layer**: Interface for user applications and services. `Example: HTTP, DNS, FTP, SMTP`
-   - Test DNS with `dig` or `nslookup`
-   - Use `curl` or `wget` to test HTTP endpoints.
+1. **Physical Layer**:  Raw data (bits) are transmitted by wireless media, wires, or hardware. `Example: Ethernet cables and WiFi signals`
+2. **Data Link Layer**: Responsible for error detection, MAC addressing, framing, and frame transfers between the internet.
+ `Example: switches, VLANs, and ARP`
+3. **Network Layer**:  Routing, IP addressing, and packet forwarding. 
+`Example: Routers, Firewalls, ICMP`
+4. **Transport Layer**: Reliable data transfer (TCP) or faster transfer (UDP). 
+`Example: TCP, UDP, Ports, netstat-tupln, telnet <ip> <port>`
+5. **Session Layer**: Controls app (API) sessions. communication session.
+6. **Presentation Layer**: Compression, encryption, and data formatting. 
+`Example: SSL/TLS, Data Serialization (JSON, XML)`
+7. **Application Layer**: User interface for services and applications. 
+`Example: HTTP, DNS, FTP, SMTP`
+   -  Use `dig` or `nslookup` to test DNS.
+   - The `curl` and `wget` commands are used to test HTTP endpoints.
 ---
 
 ## 1b. TCP/IP Model
 
-This is a fundamental framework for computer networking and operates at the Transport Layer of the OSI Model. TCP/IP are the core protocol components of the internet and define how data is transmitted over the network. This ensures reliable communication between devices before data exchange.
+This is a key computer networking framework that runs at the OSI Model's Transport Layer. TCP/IP are the main protocol components of the internet, defining how data is transported across the network. This ensures reliable communication between devices prior to data sharing.
 
 **Functionality**: It breaks data into packets, assigns sequence numbers.
 
 This model has 4 layers as follows:
 
-1. **Link Layer**: Transfers frames between internet, Framing, MAC addressing, error detection. `Example: Switches, VLAN, ARP`
-2. **Internet Layer**: Packet forwarding, IP addressing, and routing. `Example: Routers, Firewalls, ICMP`
-3. **Transport Layer**: Reliable data transfer (TCP) or faster transfer (UDP). `Example: TCP, UDP, Ports, netstat-tupln, telnet <ip> <port>`
-4. **Application Layer**: Interface for user applications and services. `Example: HTTP, DNS, FTP, SMTP`
-   - Test DNS with `dig` or `nslookup`
-   - Use `curl` or `wget` to test HTTP endpoints.
+1. **Link Layer**: Responsible for error detection, MAC addressing, framing, and frame transfers between the internet. 
+`Example: switches, VLANs, and ARP`
+2. **Internet Layer**: Routing, IP addressing, and packet forwarding. 
+`Example: Routers, Firewalls, ICMP`
+3. **Transport Layer**:Reliable data transfer (TCP) or faster transfer (UDP). 
+`Example: TCP, UDP, Ports, netstat-tupln, telnet <ip> <port>`
+4. **Application Layer**: User interface for services and applications. 
+`Example: HTTP, DNS, FTP, SMTP`
+   -  Use `dig` or `nslookup` to test DNS.
+   - The `curl` and `wget` commands are used to test HTTP endpoints.
 ---
 
 ## UDP
 
-User Datagram Protocol also operates at the transmission layer. This is a connectionless protocol that offers minimal services.
+The User Datagram Protocol also works at the transmission layer. This is a connectionless protocol that provides few services.
 
 ---
 
@@ -54,14 +63,14 @@ User Datagram Protocol also operates at the transmission layer. This is a connec
 
 ## Protocol
 
-A protocol is a set of rules that define how data is transmitted and received between devices in a network.
+A protocol is a set of rules that control how data is sent and received over a network.
 
 ---
 
 ## Internet Protocol
 
-Internet Protocol functions at the Network layer. It is a fundamental part of the TCP/IP protocol suite. Internet Protocol is a set of standards for addressing and routing data on the internet.
+The Internet Protocol operates at the Network layer. It is a core component of the TCP/IP protocol system. Internet Protocol (IP) is a set of standards for addressing and routing data over the internet.
 
-**Functionality**: IP assigns unique IP addresses to devices and uses routing tables to direct data across networks.
+**Functionality**: IP assigns each device a unique IP address and directs traffic across networks using routing tables.
 
 ---
