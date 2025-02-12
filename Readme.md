@@ -9,7 +9,7 @@ Welcome to the **Networking Guide** repository! This repository covers essential
 - OSI Model
 - TCP/IP Layers
   
-📂 [Explore Networking Foundations](./Foundations/README.md)
+📂 [Explore Networking Foundations](./Networking%20Foundations/Readme.md)
 
 ---
 
