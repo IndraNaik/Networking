@@ -26,7 +26,7 @@ Welcome to the **Networking Guide** repository! 🚀 This repository serves as a
 - Domain Name System (DNS)
 - Firewalls & Security Principles
 - Packet Flow & Routing  
-📂 [Explore Key Networking Components](./Key_Components/README.md)
+📂 [Explore Key Networking Components](./Networking%20Components/README.md)
 
 ---
 
