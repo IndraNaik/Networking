@@ -90,5 +90,21 @@ A **protocol** is a set of rules governing data transmission over networks.
 
 ---
 
+## 🌐 Network & Packet
+
+🔹A**Network** is linked to share resorces over two or more computers.
+
+📌 **Types of Network**
+- PAN (Personal Area Network)
+- LAN (Local Area Network)
+- WAN (Wide Area Network)
+- MAN (Metropoltian Area Network)
+
+### 🔹 Packet
+
+Data sent over network is divided into smaller segments called **packets**
+
+---
+
 🚀 **This guide is constantly evolving!** Stay tuned for updates, and feel free to contribute. 🎯
 
