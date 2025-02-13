@@ -1,6 +1,6 @@
 # Networking Components
 
-## 🌐 1a. Subnetting and IP Addressing
+## 🌐 2a. Subnetting and IP Addressing
 
 ### 🔹 Subnet
 
@@ -45,6 +45,26 @@ An **IP address** is a unique identifier assigned to each device on a network, e
 - **IPv6 Example:** fe80::1ff:fe23:4567:890a (Local Link Address)
 
 An IP address consists of **network** and **host** portions, defined by the subnet mask.
+
+---
+
+## 🌐 2b. Domain Name System (DNS)
+
+The **Domain Name System (DNS)** is a hierarchical system that translates human-readable domain names (e.g., example.com) into IP addresses (e.g., 192.168.1.1). It plays a crucial role in internet communication by enabling users to access websites using domain names instead of numerical IP addresses.
+
+### 📌 DNS Record Types
+
+| Record Type | Description | Example |
+|------------|-------------|---------|
+| **A** | Maps a domain to an IPv4 address | example.com → 192.168.1.1 |
+| **AAAA** | Maps a domain to an IPv6 address | example.com → 2001:db8::ff00:42:8329 |
+| **CNAME** | Alias record that maps a domain to another domain | www.example.com → example.com |
+| **MX** | Specifies mail servers for a domain | example.com → mail.example.com |
+| **TXT** | Stores text-based information, often for security and verification | example.com → "v=spf1 include:_spf.google.com ~all" |
+| **NS** | Specifies authoritative name servers for a domain | example.com → ns1.example.com, ns2.example.com |
+| **PTR** | Reverse lookup record that maps an IP address to a domain | 192.168.1.1 → example.com |
+| **SRV** | Defines service-specific records for applications | _sip._tcp.example.com → sipserver.example.com |
+| **SOA** | Provides administrative information about a DNS zone | example.com → Primary NS, email, serial number |
 
 ---
 
