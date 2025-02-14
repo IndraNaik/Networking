@@ -20,6 +20,8 @@ jobs:
 
       - name: Merge pipeline into main
         run: |
+          git fetch origin
           git checkout main
-          git merge --no-ff pipeline -m "Auto-merging pipeline into main"
-          git push https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/your-username/your-repository.git main
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  
