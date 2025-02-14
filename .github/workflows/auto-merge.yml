@@ -22,4 +22,6 @@ jobs:
         run: |
           git fetch origin
           git checkout main
-          git push https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/IndraNaik/Networking.git main
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  
