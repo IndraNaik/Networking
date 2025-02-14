@@ -21,4 +21,5 @@ jobs:
       - name: Merge pipeline into main
         run: |
           git fetch origin
+          git checkout main
           git push https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/IndraNaik/Networking.git main
