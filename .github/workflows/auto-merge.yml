@@ -15,11 +15,20 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "${{ secrets.GH_USERNAME }}"
-          git config --global user.email "${{ secrets.GH_EMAIL }}"
+          git config --global user.name "${{ secrets.GIT_USERNAME }}"
+          git config --global user.email "${{ secrets.GIT_EMAIL }}"
 
-      - name: Merge pipeline into main
+      - name: Setup authentication
+        run: |
+          git remote set-url origin https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}.git          
+
+      - name: Checkout main branch
         run: |
           git checkout main
-          git merge --no-ff pipeline -m "Auto-merging pipeline into main"
-          git push https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/your-username/your-repository.git main
+          git pull origin main
+      - name: Merge pipeline into main
+        run: |
+          git merge --no-ff pipeline -m "Auto-merged pipeline into main"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  

@@ -106,5 +106,7 @@ Data sent over network is divided into smaller segments called **packets**
 
 ---
 
+🚀 Happy Learning! 🎯
+
 🚀 **This guide is constantly evolving!** Stay tuned for updates, and feel free to contribute. 🎯
 
