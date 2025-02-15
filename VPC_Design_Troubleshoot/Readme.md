@@ -1,8 +1,8 @@
-# 🏗️ 3a. VPC Design & Troubleshooting
+# 🏗️  VPC Design & Troubleshooting
 
 ## 📌 Key Topics
 
-### 🎯 Best Practices for VPC Design
+### 🎯 3a. Best Practices for VPC Design
 - Use **multiple Availability Zones (AZs)** for high availability.
 - Implement **private and public subnets** to separate resources securely.
 - Enable **VPC Flow Logs** for monitoring traffic.
