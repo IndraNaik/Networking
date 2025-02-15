@@ -35,7 +35,7 @@ Welcome to the **Networking Guide** repository! 🚀 This repository serves as a
 - Best Practices for VPC Design
 - Route Tables & NAT Gateway
 - Common VPC Connectivity Issues & Fixes  
-📂 [Explore VPC Design](./VPC_Design_Troubleshoot/README.md)
+📂 [Explore VPC Design](./VPC_Design_Troubleshoot/Readme.md)
 
 ---
 
