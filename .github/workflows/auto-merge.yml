@@ -1,11 +1,14 @@
-name: Merge from Pipeline to Main
+name: Merge Branches Automatically
 
 on:
   push:
     branches:
-      - pipeline 
+      - pipeline
+      - n/w-f
+
 jobs:
-  sync_pipeline_to_main:
+  merge_pipeline_to_main:
+    if: github.ref == 'refs/heads/pipeline'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -26,9 +29,40 @@ jobs:
         run: |
           git checkout main
           git pull origin main
-      - name: Merge pipeline into main
+
+      - name: Merge pipeline into main branch
         run: |
           git merge --no-ff pipeline -m "Auto-merged pipeline into main"
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
+  merge_nw_f_to_pipeline:
+    if: github.ref == 'refs/heads/n/w-f'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "${{ secrets.GIT_USERNAME }}"
+          git config --global user.email "${{ secrets.GIT_EMAIL }}"
+
+      - name: Setup authentication
+        run: |
+          git remote set-url origin https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}.git          
+
+      - name: Checkout pipeline branch
+        run: |
+          git checkout pipeline
+          git pull origin pipeline
+
+      - name: Merge n/w-f into pipeline
+        run: |
+          git merge --no-ff n/w-f -m "Auto-merged n/w-f into pipeline"
+          git push origin pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
