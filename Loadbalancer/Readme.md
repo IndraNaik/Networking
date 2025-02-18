@@ -27,7 +27,7 @@ Load balancing is a crucial technique used to distribute network traffic across 
 
 ## 🔍 Differentiation of Load Balancing Types
 
-| 🔹 Type                   | 📏 OSI Layer | 🔧 Example Tools/Services    | 🎯 Use Case                      | 🚀 Performance | 💰 Cost  |
+|  Type                   |  OSI Layer |  Example Tools/Services    |  Use Case                      |  Performance |  Cost  |
 |---------------------------|-------------|------------------------------|----------------------------------|--------------|---------|
 | **Hardware Load Balancing** | Layer 4/7   | F5 Big-IP, Citrix NetScaler  | Large enterprises, data centers | 🔥 High      |  High  |
 | **Software Load Balancing** | Layer 4/7   | HAProxy, Nginx, Traefik      | Web applications, microservices | ⚡ Medium    |  Low   |
